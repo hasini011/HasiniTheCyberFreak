@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>hasini-kuppireddy</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+
+			.major {
+				animation: slideIn 1s ease-in-out forwards;
+				}
+
+				@keyframes slideIn {
+				0% {
+					opacity: 0;
+					transform: translateY(-50px);
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			.btn {
+				background-color: #242a2f;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;			
+			}
+			.btn:hover {
+				background-color: #403f3f;
+			}
+			#project-info {
+				display: none;
+				opacity: 0;
+				margin-top: 20px;
+				padding: 20px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				transition: opacity 0.5s ease-in-out;
+			}
+
+			.word-by-word span {
+				opacity: 0;
+				display: inline-block;
+				animation: reveal 0.5s forwards;
+				margin-right: 5px; /* Adding margin to create space between words */
+			}
+			@keyframes reveal {
+				to {
+					opacity: 1;
+				}
+			}
+		
+			.fade-in {
+				animation: fade-in 1.5s forwards;
+			}
+        
+			@keyframes fade-in {
+				
+				to {
+					opacity: 1;
+				}
+			}
+
+			.fade-out {
+				animation: fade-out 0.5s forwards;
+			}
+
+			@keyframes fade-out {
+				from {
+					opacity: 1;
+				}
+				to {
+					opacity: 0;
+				}
+			}	
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Hasini Kuppireddy</h1>
+								<p><i>Cybersecurity enthusiatic with a master's degree & internship experience. <br> currently looking for a Job opportunity to prove my abilities.</i> <a href="https://html5up.net"></a>
+								 <a href="https://html5up.net/license"></a> </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro" onclick="revealTextWordByWord('intro')"><b>About Me</b></a></li>
+								<li><a href="#work"><b>Experience</b></a></li>
+								<li><a href="#skills" ><b>Skills</b></a></li>
+								<li><a href="#contact"><b>Contact</b></a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro" >
+								<h2 class="major">About Me</h2>
+								
+								<p>
+									A proactive and dedicated security professional with over 2 years of experience in various Cybersecurity domains. Driven by a passion for cybersecurity, I thrive in collaborative environments and continuously seek opportunities for personal and professional growth. Currently working on various projects to build expertise on the skills I learned and work towards relevant certifications.</p>
+
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Experience</h2>
+								<span class="image main"><img src="images/cert.png" alt="" /></span>
+								<p>
+									<h3> <b>Cyber Security and Ethical Hacking Intern </b> <br>
+									<b> Talakunchi Networks &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;<i> Sep 2021 – Nov 2021</i></b> </h3>
+								</p>
+
+								<button class="btn" onclick="showProjectInfo('project1-info')"><h6><i> Exploitation of System Vulnerabilities Project</i></h6></button>
+   								<div id="project1-info" style="display: none;">        							
+        							<br>
+									<ul style="list-style-type: square;">
+										<li>Conducted exhaustive security-focused system vulnerability assessment, enhancing overall system security posture by 30%.</li>
+										<li>Identified and remediated SMTP open relay vulnerabilities and zone transfers, strengthening network security by 40%.</li>
+										<li>Pinpointed entry vectors and security vulnerabilities through NetBIOS enumeration, improving system defense mechanisms.</li>
+										<li>Analyzed data traffic using Wireshark to ensure confidentiality and integrity of sensitive information and identify potential abuse of protocols and data leak with a 60% success rate.</li>
+										<li>Simulated real-world network scenarios through controlled network stress testing using Metasploit framework, assessing system resilience under heavy traffic conditions including testing for DDoS resilience and implementing mitigations as needed.</li>
+									</ul>																		
+    							</div>
+
+								<br><br>
+
+								<button class="btn" onclick="showProjectInfo('project2-info')"><h6><i> Cyber Reconnaissance & Vulnerability Exploitation Project</i></h6></button>
+								<div id="project2-info" style="display: none;">
+									<br>
+									<ul style="list-style-type: square;">
+										<li>Employed SQL injection and Google hacking techniques for website reconnaissance, identifying vulnerabilities and potential security risks.</li>
+										<li>Performed automated website scanning and vulnerability exploitation using OWASP ZAP Tool, Nmap scans, and Metasploit, resulting in comprehensive reports and the identification of security weaknesses for remediation.</li>
+									</ul>
+								</div>
+
+								<br><br>
+
+								<button class="btn" onclick="showProjectInfo('project3-info')"><h6> <i>Integrating DAC and RBAC Policies Project</i></h6></button>
+								<div id="project3-info" style="display: none;">
+									<br>
+									<ul style="list-style-type: square;">
+										<li>Implemented an integrated user management system, incorporating Discretionary Access Control (DAC) and Role-Based Access Control (RBAC), resulting in optimal and secure resource access.</li>
+										<li>Configured Linux file system permissions and sudo policies, facilitating streamlined collaboration among project stakeholders.</li>
+										<li>Managed user roles effectively, including the removal of resigning users, ensuring a robust and secure system.</li>
+										<li>Enhanced protection for approximately 90% of critical system files and directories through strategic implementation of DAC and RBAC policies, thereby strengthening overall user administration processes.</li>
+									</ul>
+								</div>
+
+								<br><br>
+
+								<button class="btn" onclick="showProjectInfo('project4-info')"><h6><i> System Hacking Project</i></h6></button>
+								<div id="project4-info" style="display: none;">
+									<br>
+									<ul style="list-style-type: square;">
+										<li>Conducted controlled system security assessments using Kali Linux within a secure environment, enhancing understanding of system vulnerabilities and potential threats.</li>
+										<li>Implemented a comprehensive penetration testing strategy utilizing Hydra, Auxiliary Module, NSE Scripts, and John the Ripper, resulting in the identification and remediation of system vulnerabilities. This initiative led to a significant reduction in potential security breaches by 45%, strengthening overall system security posture.</li>
+									</ul>
+								</div>
+
+								<br><br>
+								
+								<p>
+									<h3> <b>Cyber Security Intern </b> <br>
+									<b> Cisco &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp;<i> May 2021 – Aug 2021</i></b> </h3>
+								</p>
+							
+								<button class="btn" onclick="showProjectInfo('work-info')"><h6><i>Look into my work</i></h6></button>
+								<div id="work-info" style="display: none;">
+									<br>
+									<ul style="list-style-type: square;">
+										<li>Designed an inter-departmental network using Cisco Packet Tracer to establish secure data link layer communication implementing VLAN, subnetting, DHCP etc. to facilitate secure communication and data exchange between different departments within the organization.</li>
+										<li>Proficiently configured the network infrastructure, improved network performance by 30% through proficient configuration, leading to enhanced security measures and uninterrupted packet transmission.</li>
+									</ul>
+								</div>
+							
+								<script>
+									function showProjectInfo(id) {
+										var projectInfo = document.getElementById(id);
+										if (projectInfo.style.display === "none" || projectInfo.style.display === '') {
+											projectInfo.style.display = "block";
+											projectInfo.classList.remove('fade-out');
+											projectInfo.classList.add('fade-in');
+										} else {
+											projectInfo.classList.remove('fade-in');
+											projectInfo.classList.add('fade-out');
+											setTimeout(function() { projectInfo.style.display = "none"; }, 500);
+										}
+									}
+								</script>
+
+							</article>
+
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								<span class="image main"><img src="images/skills_image 2.jpeg" alt="" /></span>
+					
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; METASPLOIT   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; BURP SUITE</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; WIRESHARK   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;HYDRA</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; IDS & IPS   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp;&ensp;&ensp; TCP/IP</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; CISCO PACKET TRACER   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp;NMAP</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; SQL   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;&ensp;  &ensp; &ensp;&ensp; DIGITAL FORENSICS</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; FIREWALL   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; OWASP</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; SPLUNK   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; VMWARE</p>
+								<p>  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; PYTHON   &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;  &ensp; &ensp;  &ensp; C</p>
+								
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Let's get connected</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name*</label>
+											<input type="text" name="name" id="name" placeholder="Enter your name" required/>
+										</div>
+										<div class="field half">
+											<label for="email">Email*</label>
+											<input type="text" name="email" id="email" placeholder="Enter your email" required/>
+										</div>
+										<div class="field half">
+											<label for="phone">Phone</label>
+											<input type="text" name="phone" id="phone" placeholder="Enter your phone number"/>
+										</div>
+										<div class="field half">
+											<label for="address">Address</label>
+											<input type="text" name="address" id="address" placeholder="Enter your address"/>
+										</div>
+										<div class="field">
+											<label for="subject">Subject</label>
+											<input type="text" name="subject" id="subject" placeholder="Type the subject"/>
+										</div>
+										<div class="field">
+											<label for="message">Message*</label>
+											<textarea name="message" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/hasini-kuppireddy/" class="icon brands fa-linkedin" target ="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:hasinikuppireddy@gmail.com" class="fa fa-envelope" style="font-size:16px" target ="_blank"> <span class="icons"></span></a></li>
+									<li><a href="tel:+1 636-328-9470" class="fa fa-phone" style="font-size:16px" target ="_blank"> <span class="icons"></span></a></li>
+									<li><a href="https://github.com/" class="icon brands fa-github" target ="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p><h4> Check out my <a href="https://drive.google.com/file/d/1cB0HKS9L-G7caoSa2qAUdQmpYA3M9-Ly/view?usp=drive_link" target ="_blank"><u>RESUME</u></a>
+						</h4></p>
+						
+					</footer> 
+
+					
+					  
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
