@@ -56,6 +56,12 @@
 				animation: reveal 0.5s forwards;
 				margin-right: 5px; /* Adding margin to create space between words */
 			}
+
+			.letter {
+            display: inline-block;
+            opacity: 0;
+            animation: letter-animation 0.5s forwards;
+        }
 			@keyframes reveal {
 				to {
 					opacity: 1;
@@ -86,6 +92,17 @@
 				}
 			}	
 
+			@keyframes letter-animation{
+				from {
+		                	opacity: 0;
+		                	transform: translateY(-20px);
+		            	}
+		            	to {
+		                	opacity: 1;
+		                	transform: translateY(0);
+		            	}
+		        }
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -105,6 +122,22 @@
 								 <a href="https://html5up.net/license"></a> </p>
 							</div>
 						</div>
+						<script>
+						        document.addEventListener("DOMContentLoaded", () => {
+						            const nameElement = document.getElementById('name');
+						            const text = nameElement.textContent;
+						            nameElement.innerHTML = '';
+						            
+						            text.split('').forEach((char, index) => {
+						                const span = document.createElement('span');
+						                span.textContent = char;
+						                span.className = 'letter';
+						                span.style.animationDelay = `${index * 0.1}s`;
+						                nameElement.appendChild(span);
+						            });
+						        });
+						    </script>
+						
 						<nav>
 							<ul>
 								<li><a href="#intro" onclick="revealTextWordByWord('intro')"><b>About Me</b></a></li>
